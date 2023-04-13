@@ -1,0 +1,27 @@
+/** BUTTON **/
+
+.button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    display: inline-block;
+    &-primary {
+        background-color: var(--primary-color);
+        color: #fff;
+        padding: 7px 14px;
+        -webkit-transition: background-color .3s;
+        -o-transition: background-color .3s;
+        transition: background-color .3s;
+        &:hover {
+            background-color: var(--primary-variant);
+            color: #fff;
+        }
+    }
+    &-center {
+        position: relative;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
+}
